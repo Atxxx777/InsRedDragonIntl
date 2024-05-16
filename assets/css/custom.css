@@ -1,0 +1,65 @@
+* {
+  font-family: 'Open Sans', sans-serif; /* 设置所有元素的字体为Open Sans */
+}
+.row.titlebar #exit-btn {
+    margin-right: 3px;
+}
+.titlebar {
+  padding: 1rem 0 0 0!important; /* 设置标题栏的内边距 */
+} 
+.titlebar button {
+  padding: 3px!important; /* 设置标题栏按钮的内边距 */
+  background-color: white!important; /* 设置标题栏按钮的背景颜色为白色 */
+  -webkit-app-region: no-drag; /* 设置标题栏按钮不响应拖动事件 */
+}
+.headers {
+  padding-top: 0 !important; /* 设置headers的顶部内边距为0 */
+}
+.headers input {
+  -webkit-app-region: no-drag; /* 设置headers中的输入框不响应拖动事件 */
+}
+.ui.checkbox {
+  margin: 0em 0em 0.28571429rem 0em; /* 设置复选框的外边距 */
+}
+
+/* 自定义标签 */
+label {
+  font-size: 0.9em !important; /* 设置标签的字体大小 */
+  user-select: none; /* 禁止用户选择标签文本 */
+}
+.ui.checkbox label {
+  cursor: pointer; /* 设置复选框标签的鼠标样式为指针 */
+}
+
+/* 自定义消息框 */
+.ui.message#file-exists {
+  background: rgba(74, 234, 23, 0.33); /* 设置文件存在消息框的背景颜色 */
+}
+.ui.message#file-not-exists {
+  background: rgba(234, 23, 23, 0.22); /* 设置文件不存在消息框的背景颜色 */
+}
+
+/* 自定义段落 */
+.ui.segment {
+    user-select: none; /* 禁止用户选择段落文本 */
+}
+
+/* 自定义滚动条样式 */
+::-webkit-scrollbar {
+  width: 8px; /* 滚动条宽度 */
+  background-color: rgba(0,0,0,0); /* 滚动条背景颜色 */
+  -webkit-border-radius: 100px; /* 滚动条边框半径 */
+}
+/* 滚动条悬停效果 */
+::-webkit-scrollbar:hover {
+  background-color: rgba(0, 0, 0, 0.09); /* 悬停时的背景颜色 */
+}
+
+/* 滚动条thumb样式 */
+::-webkit-scrollbar-thumb:vertical {
+  background: rgba(0,0,0,0.5); /* 滚动条thumb的背景颜色 */
+  -webkit-border-radius: 100px; /* thumb的边框半径 */
+}
+::-webkit-scrollbar-thumb:vertical:active {
+  background: rgba(0,0,0,0.61); /* 点击thumb时的背景颜色 */
+}
